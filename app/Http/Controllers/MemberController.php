@@ -42,8 +42,7 @@ class MemberController extends Controller
 
     public function delete($id)
     {
-    Member::findOrFail($id)->delete();
-    return response('Deleted Successfully', 200);
+        Member::findOrFail($id)->delete();
+        return response('Deleted Successfully', 200);
     }
-
 }
